@@ -19,6 +19,7 @@ int main(int argc, char *argv[]) {
 	
 	void make_bingo(int bingo[N][N]);
 	
+	printf("5%d\n", make_bingo);
 	return 0;
 }
 
@@ -28,14 +29,13 @@ void make_bingo(int bingo[N][N])     //빙고판을 만듬
     int i;      //1~25로 초기화 
 	int j;     
 	
-	for (int i ; i<N ; i++)
+	for (i=0 ; i<N ; i++)
 	{
-		for (int j ; j<N ; J++)
+		for (j=0 ; j<N ; j++)
 		{
 			bingo[i][j] = i*N +j +1;
 		}
 	}
-	
 }
 	
 	
