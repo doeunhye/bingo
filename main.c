@@ -5,10 +5,12 @@
 #define N 5
 #define M 5 
 
-void make_bingo(int bingo[N][N]);
-void mix_bingo(int bingo[N][N]);
-void play_bingo(int bingo[N][N]);
-int count_bingo(int bingo[N][N], int sum[N]);
+int initate_bingo([N][N]);           //빙고테이블을 초기에 만듬 
+int print_bingo();             //빙고 테이블 현재 상황을 화면에 출력 
+int get_number_byMe();         //내가 빙고 번호 입력 선택 
+int get_number_byCom();        //컴퓨터가 임의로 빙고 번호 선택 
+int process_bingo();           //선택된 숫자를 입력받아서 빙고 테이블 칸을 채움 
+int count_bingo();             //빙고 테이블이 채운 가로/세로/대각선 줄 수를 계산해서 반환 
  
 int main(int argc, char *argv[]) {
 	
@@ -17,15 +19,25 @@ int main(int argc, char *argv[]) {
 	
 	printf("빙고가 5줄 만들어지면 승리 입니다.\n");
 	
-	void make_bingo(int bingo[N][N]);
+	int initate_bingo(user);
+	int initate_bingo(com);
+	int print_bingo(user); 
+	int print_bingo(com); 
 	
-	printf("5%d\n", make_bingo);
+	while(1)
+		{
+			
+		}
+	 
+
 	return 0;
 }
 
 
-void make_bingo(int bingo[N][N])     //빙고판을 만듬 
+void initate_bingo(int bingo[N][N])     //빙고판을 만듬 
 {
+   srand((unsinged int)tinme(NULL));
+   
     int i;      //1~25로 초기화 
 	int j;     
 	
